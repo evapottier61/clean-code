@@ -3,38 +3,17 @@ package ex5;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Caisse {
+public abstract class Caisse {
 
-    private String nom;
-    private List<Item> items;
+    protected List<Item> items;
 
     /**
      * Constructeur
      *
-     * @param nom
      */
-    public Caisse(String nom) {
+    public Caisse() {
         super();
-        this.nom = nom;
         this.items = new ArrayList<>();
-    }
-
-    /**
-     * Getter pour l'attribut nom
-     *
-     * @return the nom
-     */
-    public String getNom() {
-        return nom;
-    }
-
-    /**
-     * Setter pour l'attribut nom
-     *
-     * @param nom the nom to set
-     */
-    public void setNom(String nom) {
-        this.nom = nom;
     }
 
     /**
@@ -54,5 +33,7 @@ public class Caisse {
     public void setItems(List<Item> items) {
         this.items = items;
     }
+
+    public abstract void addItem(Item item);
 
 }
