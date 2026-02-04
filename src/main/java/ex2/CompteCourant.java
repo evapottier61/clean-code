@@ -41,8 +41,8 @@ public class CompteCourant extends CompteBancaire{
      * @param montant
      */
     public void debiterMontant(double montant){
-        if(this.getSolde() < montant){
-            this.setDecouvert(this.getDecouvert()+ (this.getSolde() - montant));
+        if(this.solde < montant){
+            this.setDecouvert(this.getDecouvert()+ (this.solde - montant));
         }
         super.debiterMontant(montant);
     }

@@ -20,8 +20,8 @@ public class LivretA extends CompteBancaire {
      *
      */
     public void appliquerRemuAnnuelle() {
-        var solde = this.getSolde();
-        this.setSolde(solde + solde * tauxRemuneration / 100);
+        var s = this.solde;
+        this.solde += solde * tauxRemuneration / 100;
     }
 
     /**

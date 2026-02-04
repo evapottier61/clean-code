@@ -8,7 +8,7 @@ public class CompteBancaire {
     /**
      * solde : solde du compte
      */
-    private double solde;
+    protected double solde;
 
     /**
      * @param solde
