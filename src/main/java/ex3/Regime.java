@@ -1,6 +1,6 @@
 package ex3;
 
-public enum Comportement {
+public enum Regime {
     HERBIVORE,
     CARNIVORE
 }

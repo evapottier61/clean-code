@@ -1,7 +1,7 @@
 package ex3;
 
-import static ex3.Comportement.CARNIVORE;
-import static ex3.Comportement.HERBIVORE;
+import static ex3.Regime.CARNIVORE;
+import static ex3.Regime.HERBIVORE;
 import static ex3.TypeAnimal.*;
 
 public class ZooApplication {

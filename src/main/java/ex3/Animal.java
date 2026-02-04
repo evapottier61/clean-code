@@ -4,17 +4,17 @@ public class Animal {
 
     private String name;
     private TypeAnimal typeAnimal;
-    private Comportement comportement;
+    private Regime regime;
 
-    public Animal(String name, TypeAnimal typeAnimal, Comportement comportement) {
+    public Animal(String name, TypeAnimal typeAnimal, Regime regime) {
         this.name = name;
         this.typeAnimal = typeAnimal;
-        this.comportement = comportement;
+        this.regime = regime;
     }
 
     @Override
     public String toString() {
-        return this.name + ' '+ this.typeAnimal + ' '+ this.comportement + ' ';
+        return this.name + ' '+ this.typeAnimal + ' '+ this.regime + ' ';
     }
 
     public String getName() {
@@ -33,11 +33,11 @@ public class Animal {
         this.typeAnimal = typeAnimal;
     }
 
-    public Comportement getComportement() {
-        return comportement;
+    public Regime getComportement() {
+        return regime;
     }
 
-    public void setComportement(Comportement comportement) {
-        this.comportement = comportement;
+    public void setComportement(Regime regime) {
+        this.regime = regime;
     }
 }
